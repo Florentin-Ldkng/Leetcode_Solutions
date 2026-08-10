@@ -9,8 +9,8 @@ namespace Leetcode.Solutions
 
         /// <summary>
         /// 3731. Find Missing Elements
-        /// Problem: <a href="https://leetcode.com/problems/find-missing-elements">LeetCode Problem</a>
-        /// Submission: <a href="https://leetcode.com/submissions/detail/2098424452/">My Submission</a>
+        /// Problem: https://leetcode.com/problems/find-missing-elements
+        /// Submission: https://leetcode.com/submissions/detail/2098424452/
         /// </summary>
         public IList<int> FindMissingElements(int[] nums)
         {
