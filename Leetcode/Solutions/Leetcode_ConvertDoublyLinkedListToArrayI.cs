@@ -9,12 +9,11 @@ namespace Leetcode.Solutions
         /// <summary>
         /// 3263. Convert Doubly Linked List to Array I
         /// Problem: https://leetcode.com/problems/convert-doubly-linked-list-to-array-i
-        /// Submission: https://leetcode.com/submissions/detail/2101341641/
+        /// Submission: https://leetcode.com/submissions/detail/2101347923/
         /// </summary>
         public int[] ToArray(Node head)
         {
             int arraySize = 0;
-            Node dummy = head;
 
             while (head.next != null)
             {
