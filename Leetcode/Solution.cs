@@ -1,61 +1,13 @@
 ﻿using System.Collections;
+using System.Diagnostics.Metrics;
+using System.Reflection;
 using System.Xml.Linq;
 
 namespace Leetcode
 {
     public class Solution
     {
-        public int StrStr(string haystack, string needle)
-        {
-            Dictionary<char,int> needleDict = new Dictionary<char, int>();
-            
-            bool found = false;
-            
-            for (int i = 0; i < needle.Length - 1; i++)
-            {
-                needleDict[needle[i]] = needle.Length - i - 1;
-            }
-            
-            int j = needle.Length - 1;
-            
-            while (j < haystack.Length)
-            {
-                int counter = 0;
-            
-                for (int i = needle.Length - 1; i >= 0; i--)
-                {            
-                    if (needle[i] == haystack[j - counter])
-                    {
-                        counter++;
-                    }
-                    else
-                    {            
-                        break;
-                    }
-                }
-            
-                if (counter == needle.Length)
-                {
-                    found = true;
-                    break;
-                }
-            
-            
-                if (needleDict.ContainsKey(haystack[j]))
-                {
-                    j += needleDict[haystack[j]];
-                }
+        
 
-                else
-                {
-                    j += needle.Length;
-                }
-            }
-            
-            if (found)
-                return j - (needle.Length - 1);
-            
-            return -1;
-        }
     }
 }

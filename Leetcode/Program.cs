@@ -6,10 +6,7 @@
         {
             Solution solution = new Solution();
 
-            var a = solution.StrStr("aaa", "aaaa");
 
-
-            Console.WriteLine(a);
 
         }
     }
